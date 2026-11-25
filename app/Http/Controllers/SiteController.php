@@ -20,7 +20,7 @@ class SiteController extends Controller
 
     public function services(): View
     {
-        return view('pages.services', ['services' => $this->serviceCatalog()]);
+        return view('pages.services');
     }
 
     public function serviceShow(string $slug): View
