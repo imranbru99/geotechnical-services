@@ -57,7 +57,7 @@ class SiteController extends Controller
 
         ContactMessage::query()->create($data);
 
-        return back()->with('success', 'Thanks! BedrockForge will follow up within one business day.');
+        return back()->with('success', 'Thanks! StratumForge Geotech will follow up within one business day.');
     }
 
     public function blog(): View
@@ -108,7 +108,7 @@ class SiteController extends Controller
   array (
     'title' => 'Foundation Investigation',
     'summary' => 'Borings, CPT, and bearing recommendations for shallow and deep foundations.',
-    'body' => 'BedrockForge scopes foundation investigations for Seattle mid-rises, waterfront pads, and hillside homes — subsurface profiles, liquefaction screening, and design parameters engineers can put on drawings.',
+    'body' => 'StratumForge scopes foundation investigations for Seattle mid-rises, waterfront pads, and hillside homes — subsurface profiles, liquefaction screening, and design parameters engineers can put on drawings.',
     'image' => 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80',
   ),
   'slope-stability' => 
@@ -129,7 +129,7 @@ class SiteController extends Controller
   array (
     'title' => 'Pavement Subgrade Evaluation',
     'summary' => 'CBR, R-value, and resilient modulus support for roadway and parking designs.',
-    'body' => 'From municipal overlays to private lots, BedrockForge characterizes subgrade so pavement sections are neither overbuilt nor destined for early rutting.',
+    'body' => 'From municipal overlays to private lots, StratumForge characterizes subgrade so pavement sections are neither overbuilt nor destined for early rutting.',
     'image' => 'https://images.unsplash.com/photo-1515162816999-a0c47dc590f2?auto=format&fit=crop&w=1600&q=80',
   ),
   'seismic-site-class' => 

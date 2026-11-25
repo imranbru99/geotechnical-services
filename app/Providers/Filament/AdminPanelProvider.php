@@ -26,9 +26,9 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('BedrockForge')
+            ->brandName('StratumForge Geotech')
             ->colors([
-                'primary' => Color::hex('#d97706'),
+                'primary' => Color::hex('#1B2A41'),
                 'gray' => Color::Slate,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')

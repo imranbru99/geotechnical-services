@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'BedrockForge Geotech')
-@section('meta_description', 'BedrockForge Geotech — Foundation investigations, slopes & seismic site class for Puget Sound projects')
+@section('title', 'StratumForge Geotech')
+@section('meta_description', 'StratumForge Geotech — Foundation investigations, slopes & seismic site class for Puget Sound projects')
 
 @section('content')
 <section class="hero">
     <div class="wrap hero-inner">
-        <h1>BedrockForge<br>Geotech</h1>
+        <h1>StratumForge<br>Geotech</h1>
         <p>Foundation investigations, slope studies, and seismic site class — so Puget Sound structures sit on recommendations engineers can actually use.</p>
         <div class="hero-ctas">
             <a class="btn btn-primary" href="{{ route('contact') }}">Request investigation</a>
@@ -39,7 +39,7 @@
 
 <section class="section" style="padding-top:0">
     <div class="wrap">
-        <h2>Why BedrockForge</h2>
+        <h2>Why StratumForge</h2>
         <p class="lede">Field engineers and analysts who treat subsurface data, design parameters, and construction notes as one deliverable.</p>
         <div class="grid-3">
             <div class="panel">
@@ -61,7 +61,7 @@
 <section class="section" style="padding-top:0">
     <div class="wrap">
         <h2>Ops dashboard preview</h2>
-        <p class="lede">A glimpse of the BedrockForge ERP used to schedule drilling, track lab tests, and close project invoices.</p>
+        <p class="lede">A glimpse of the StratumForge ERP used to schedule drilling, track lab tests, and close project invoices.</p>
         <div class="dash-preview">
             <div>
                 <div class="grid-3" style="grid-template-columns:repeat(3,1fr)">

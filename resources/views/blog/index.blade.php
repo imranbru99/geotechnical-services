@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'BedrockForge Blog')
+@section('title', 'StratumForge Blog')
 @section('meta_description', 'Practical notes for developers, structural engineers, and hillside owners.')
 
 @section('content')

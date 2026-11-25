@@ -31,36 +31,36 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Admin',
                 'password' => Hash::make('password'),
                 'role' => 'admin',
-                'phone' => '(206) 555-0194',
+                'phone' => '(206) 555-0177',
             ]
         );
         $admin->syncRoles(['admin']);
 
         User::query()->updateOrCreate(
-            ['email' => 'manager@bedrockforge.com'],
+            ['email' => 'manager@StratumForge.com'],
             [
                 'name' => 'Soren Blake',
                 'password' => Hash::make('password'),
                 'role' => 'manager',
-                'phone' => '(206) 555-0194',
+                'phone' => '(206) 555-0177',
             ]
         )->syncRoles(['manager']);
 
         User::query()->updateOrCreate(
-            ['email' => 'field@bedrockforge.com'],
+            ['email' => 'field@StratumForge.com'],
             [
                 'name' => 'Mei Tanaka',
                 'password' => Hash::make('password'),
                 'role' => 'staff',
-                'phone' => '(206) 555-0194',
+                'phone' => '(206) 555-0177',
             ]
         )->syncRoles(['staff']);
 
         $settings = [
-            'company_name' => 'BedrockForge Geotech',
-            'company_phone' => '(206) 555-0194',
-            'company_email' => 'hello@bedrockforge.com',
-            'whatsapp' => '12065550194',
+            'company_name' => 'StratumForge Geotech',
+            'company_phone' => '(206) 555-0177',
+            'company_email' => 'hello@StratumForge.com',
+            'whatsapp' => '12065550177',
             'service_area' => 'Seattle, Bellevue, Tacoma, Everett & Puget Sound',
             'tax_rate' => '10.25',
         ];
@@ -277,7 +277,7 @@ class DatabaseSeeder extends Seeder
                     'final_amount' => $p['final_amount'] ?? null,
                     'start_date' => now()->subDays(10 - $i)->toDateString(),
                     'site_address' => trim(($customer->address ?? '').', '.$customer->city.', '.$customer->state),
-                    'notes' => 'Seeded demo geotechnical project for BedrockForge ERP.',
+                    'notes' => 'Seeded demo geotechnical project for StratumForge ERP.',
                 ]
             );
         }
@@ -344,7 +344,7 @@ class DatabaseSeeder extends Seeder
     'title' => 'What Seattle Mid-Rise Foundations Need from Geotech',
     'excerpt' => 'Bearing, settlement, and liquefaction screening — the trio structural engineers actually use.',
     'cover' => 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80',
-    'body' => 'A foundation report that only dumps boring logs is unfinished. BedrockForge pairs subsurface data with design parameters, settlement estimates, and clear construction notes for GCs.',
+    'body' => 'A foundation report that only dumps boring logs is unfinished. StratumForge pairs subsurface data with design parameters, settlement estimates, and clear construction notes for GCs.',
   ),
   1 => 
   array (
@@ -380,7 +380,7 @@ class DatabaseSeeder extends Seeder
   array (
     'category' => 'issues',
     'title' => 'Unexpected soft clay in excavation',
-    'body' => 'Stop dig. Notify BedrockForge. Photograph and log elevations. Do not place foundations on unverified fill. Update recommendations before concrete.',
+    'body' => 'Stop dig. Notify StratumForge. Photograph and log elevations. Do not place foundations on unverified fill. Update recommendations before concrete.',
   ),
   1 => 
   array (

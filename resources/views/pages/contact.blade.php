@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Contact BedrockForge')
+@section('title', 'Contact StratumForge')
 @section('content')
 <section class="section">
     <div class="wrap grid-2">
@@ -7,10 +7,10 @@
             <h2>Contact</h2>
             <p class="lede">Tell us about the structure type, hillside or waterfront constraints, and whether you need exploration, analysis, or observation. We’ll confirm Puget Sound availability and send a written proposal.</p>
             <div class="panel">
-                <p><strong>Phone:</strong> (206) 555-0194</p>
-                <p><strong>Email:</strong> hello@bedrockforge.com</p>
+                <p><strong>Phone:</strong> (206) 555-0177</p>
+                <p><strong>Email:</strong> hello@StratumForge.com</p>
                 <p><strong>Service area:</strong> Seattle, Bellevue, Tacoma, Everett & Puget Sound</p>
-                <p><strong>WhatsApp:</strong> <a href="https://wa.me/12065550194" target="_blank" rel="noopener">Chat now</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/12065550177" target="_blank" rel="noopener">Chat now</a></p>
             </div>
         </div>
         <div class="panel">

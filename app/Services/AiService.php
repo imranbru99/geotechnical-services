@@ -13,7 +13,7 @@ class AiService
   0 => 
   array (
     'q' => 'foundation investigation boring cpt bearing settlement',
-    'a' => 'Foundation investigations combine borings/CPT with bearing and settlement recommendations. BedrockForge delivers parameters Seattle structural teams can put on drawings — call (206) 555-0194.',
+    'a' => 'Foundation investigations combine borings/CPT with bearing and settlement recommendations. StratumForge delivers parameters Seattle structural teams can put on drawings — call (206) 555-0177.',
   ),
   1 => 
   array (
@@ -43,7 +43,7 @@ class AiService
   6 => 
   array (
     'q' => 'schedule quote seattle bellevue tacoma everett cost price',
-    'a' => 'Call (206) 555-0194, use the contact form, or WhatsApp. We serve Seattle, Bellevue, Tacoma, Everett, and the Puget Sound region.',
+    'a' => 'Call (206) 555-0177, use the contact form, or WhatsApp. We serve Seattle, Bellevue, Tacoma, Everett, and the Puget Sound region.',
   ),
   7 => 
   array (
@@ -128,7 +128,7 @@ class AiService
             return $best;
         }
 
-        return 'Thanks for reaching BedrockForge Geotech. We provide foundation investigations, slope stability, retaining wall support, pavement subgrade evaluation, seismic site class, and construction observation across the Puget Sound. Ask about scope, timelines, or scheduling—or call (206) 555-0194.';
+        return 'Thanks for reaching StratumForge Geotech. We provide foundation investigations, slope stability, retaining wall support, pavement subgrade evaluation, seismic site class, and construction observation across the Puget Sound. Ask about scope, timelines, or scheduling—or call (206) 555-0177.';
     }
 
     protected function callOpenAi(string $message, string $key): string
@@ -140,7 +140,7 @@ class AiService
                 'messages' => [
                     [
                         'role' => 'system',
-                        'content' => 'You are the BedrockForge Geotech assistant for a Seattle, WA geotechnical services firm. Be concise about foundations, slopes, retaining walls, pavement subgrade, seismic site class, construction observation, and scheduling. Never invent engineering stamps or guarantee permit approval.',
+                        'content' => 'You are the StratumForge Geotech assistant for a Seattle, WA geotechnical services firm. Be concise about foundations, slopes, retaining walls, pavement subgrade, seismic site class, construction observation, and scheduling. Never invent engineering stamps or guarantee permit approval.',
                     ],
                     ['role' => 'user', 'content' => $message],
                 ],
@@ -160,7 +160,7 @@ class AiService
                 'contents' => [
                     [
                         'parts' => [
-                            ['text' => "BedrockForge Geotech assistant (Seattle / Puget Sound geotechnical services). Answer briefly:
+                            ['text' => "StratumForge Geotech assistant (Seattle / Puget Sound geotechnical services). Answer briefly:
 {$message}"],
                         ],
                     ],

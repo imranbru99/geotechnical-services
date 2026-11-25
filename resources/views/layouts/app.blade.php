@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'BedrockForge Geotech') — Seattle / Puget Sound</title>
-    <meta name="description" content="@yield('meta_description', 'BedrockForge Geotech — Foundation investigations, slopes & seismic site class for Puget Sound projects')">
+    <title>@yield('title', 'StratumForge Geotech') — Seattle / Puget Sound</title>
+    <meta name="description" content="@yield('meta_description', 'StratumForge Geotech — Foundation investigations, slopes & seismic site class for Puget Sound projects')">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --ink: #1a1a1a;
+            --ink: #0D1520;
             --mark: #d97706;
             --mark-deep: #b45309;
             --signal: #0369a1;
@@ -209,16 +209,16 @@
     <div class="wrap">
         <div class="brand">Bedrock<span>Forge</span></div>
         <p>Seattle · Bellevue · Tacoma · Everett — foundations, slopes & seismic site class.</p>
-        <p style="margin-top:1rem;font-size:.9rem;">(206) 555-0194 · hello@bedrockforge.com · <a href="/admin" style="color:var(--mark)">Admin ERP</a></p>
+        <p style="margin-top:1rem;font-size:.9rem;">(206) 555-0177 · hello@StratumForge.com · <a href="/admin" style="color:var(--mark)">Admin ERP</a></p>
     </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/12065550194" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+<a class="wa-float" href="https://wa.me/12065550177" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
 
 <div class="chat-widget" id="sp-chat">
     <div class="chat-panel" id="chat-panel">
         <div class="chat-log" id="chat-log">
-            <div class="bubble bot">Hi — ask BedrockForge about foundation investigations, slope stability, retaining walls, pavement subgrade, seismic site class, construction observation, or scheduling a Puget Sound site visit.</div>
+            <div class="bubble bot">Hi — ask StratumForge about foundation investigations, slope stability, retaining walls, pavement subgrade, seismic site class, construction observation, or scheduling a Puget Sound site visit.</div>
         </div>
         <form class="chat-form" id="chat-form">
             <input type="text" id="chat-input" placeholder="Ask about foundations, slopes, seismic…" required maxlength="2000">
@@ -235,7 +235,7 @@
     const form = document.getElementById('chat-form');
     const input = document.getElementById('chat-input');
     const log = document.getElementById('chat-log');
-    const sessionId = 'bedrockforge-' + Math.random().toString(36).slice(2);
+    const sessionId = 'StratumForge-' + Math.random().toString(36).slice(2);
     toggle.addEventListener('click', () => panel.classList.toggle('open'));
     const add = (text, who) => {
         const el = document.createElement('div');
@@ -263,7 +263,7 @@
             const data = await res.json();
             add(data.reply || 'Something went wrong.', 'bot');
         } catch (err) {
-            add('Network error — please try again or call (206) 555-0194.', 'bot');
+            add('Network error — please try again or call (206) 555-0177.', 'bot');
         }
     });
 })();

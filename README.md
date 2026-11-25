@@ -1,14 +1,14 @@
-# BedrockForge Geotech — Laravel 13 + Filament 3 Website, ERP & AI
+# StratumForge Geotech — Laravel 13 + Filament 3 Website, ERP & AI
 
-Production-ready SME platform for a Seattle / Puget Sound **geotechnical services** firm: public marketing site, Filament admin ERP, knowledge base, and AI assistants for chat, content, automation ideas, and troubleshooting.
+Production-ready SME platform for a Seattle / Puget Sound **geotechnical engineering** firm: public marketing site, Filament admin ERP, knowledge base, and AI assistants for chat, content, automation ideas, and troubleshooting.
 
 ## Features
-- 🏠 Premium public site (hero, services, about, dashboard preview, contact)
-- 🪨 Service detail pages for foundations, slopes, retaining walls, pavement, seismic & observation
+- 🏗️ Premium public site (hero, services, about, dashboard preview, contact)
+- 🪨 Service detail pages for borings, foundations, slopes, retaining walls, pavement & observation
 - 📰 Blog / knowledge content with seeded posts
 - 📬 Contact form that stores leads in the database
 - 💬 Floating WhatsApp button + public AI chatbot widget
-- 🗂️ Filament ERP at `/admin` (customers, projects/investigations, inventory, invoices, payments, appointments)
+- 🗂️ Filament ERP at `/admin` (customers, projects/borings, inventory, invoices, payments, appointments)
 - 👥 Roles: Admin, Manager, Staff
 - 📊 Reports dashboard with stats + charts
 - ⚙️ Settings page for company phone, WhatsApp, tax rate, and more
@@ -20,7 +20,7 @@ Production-ready SME platform for a Seattle / Puget Sound **geotechnical service
 - Laravel 13
 - Filament 3
 - Livewire + Alpine.js
-- Tailwind-friendly public CSS (custom BedrockForge theme)
+- Tailwind-friendly public CSS (custom StratumForge theme — Syne + Manrope)
 - MySQL or SQLite
 - Spatie Laravel Permission
 - OpenAI API with Gemini fallback keys (demo FAQ mode when keys are empty)
@@ -30,29 +30,30 @@ Production-ready SME platform for a Seattle / Puget Sound **geotechnical service
 git clone https://github.com/imranbru99/geotechnical-services.git
 cd geotechnical-services
 composer install
-copy .env.example .env   # Windows
+cp .env.example .env
 php artisan key:generate
-# Ensure database/database.sqlite exists for SQLite demo
+# SQLite demo (default): ensure database/database.sqlite exists
+touch database/database.sqlite
 php artisan migrate --seed
 php artisan serve
 ```
 
-Admin ERP: `http://localhost:8000/admin` — `admin@example.com` / `password`
+Admin: `http://localhost:8000/admin` — `admin@example.com` / `password`
 
 Optional AI keys in `.env`: `OPENAI_API_KEY` or `GEMINI_API_KEY`.
 
 ## Screenshots / Visual Dashboard
-![BedrockForge hero](https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80)
-![BedrockForge field](https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80)
-![BedrockForge detail](https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80)
-![BedrockForge ops](https://images.unsplash.com/photo-1590496793929-36417d3117b4?auto=format&fit=crop&w=1400&q=80)
+![Construction excavation site](https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80)
+![Foundation excavation earthwork](https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80)
+![Slope terrain assessment](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80)
+![Field construction observation](https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1400&q=80)
 
 ## Live Demo
 Placeholder — deploy to your preferred host (Forge, Vapor, shared PHP) and update this section with the public URL.
 
 ## SEO-optimized repo description
 ```
-BedrockForge Geotech — Laravel 13 + Filament 3 website, ERP & AI for a Seattle geotechnical services SME (foundations, slopes, seismic, chatbot).
+StratumForge Geotech — Laravel 13 + Filament 3 website, ERP & AI for Puget Sound geotechnical engineering (borings, foundations, slopes, invoices, chatbot).
 ```
 
 ---

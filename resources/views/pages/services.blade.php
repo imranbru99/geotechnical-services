@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'BedrockForge Services')
+@section('title', 'StratumForge Services')
 @section('content')
 <section class="section">
     <div class="wrap">

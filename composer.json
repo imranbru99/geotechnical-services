@@ -1,8 +1,8 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "imranbru99/geotechnical-services",
     "type": "project",
-    "description": "BedrockForge Geotech \u2014 Laravel 13 + Filament 3 geotechnical services website, ERP, and AI.",
+    "description": "StratumForge Geotech — Laravel 13 + Filament 3 website, ERP, and AI for Puget Sound geotechnical engineering.",
     "keywords": [
         "laravel",
         "framework"
